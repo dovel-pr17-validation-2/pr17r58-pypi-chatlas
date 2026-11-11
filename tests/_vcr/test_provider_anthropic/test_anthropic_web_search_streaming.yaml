@@ -1,0 +1,197 @@
+interactions:
+- request:
+    body: '{"max_tokens": 4096, "messages": [{"role": "user", "content": [{"text":
+      "When was ggplot2 1.0.0 released to CRAN? Answer in YYYY-MM-DD format.", "type":
+      "text", "cache_control": {"type": "ephemeral", "ttl": "5m"}}]}], "model": "claude-haiku-5-5",
+      "stream": true, "system": [{"type": "text", "text": "[empty string]", "cache_control":
+      {"type": "ephemeral", "ttl": "5m"}}], "tools": [{"name": "web_search", "type":
+      "web_search_20250305"}]}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      anthropic-version:
+      - '2026-10-21'
+      connection:
+      - keep-alive
+      content-length:
+      - '404'
+      content-type:
+      - application/json
+      host:
+      - api.anthropic.com
+      x-stainless-async:
+      - 'false'
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-timeout:
+      - NOT_GIVEN
+    method: POST
+    uri: https://api.anthropic.com/v1/messages
+  response:
+    body:
+      string: "event: message_start\ndata: {\"type\":\"message_start\",\"message\":{\"model\":\"claude-haiku-5-5\",\"id\":\"msg_011CgiojSPFxXXu3D4eahcEu\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[],\"container\":null,\"stop_reason\":null,\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":4,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":2863,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":6,\"service_tier\":\"standard\",\"inference_geo\":\"global\",\"speed\":\"standard\"},\"diagnostics\":null}
+        \       }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":0,\"content_block\":{\"type\":\"thinking\",\"thinking\":\"\",\"signature\":\"\"}
+        \             }\n\nevent: ping\ndata: {\"type\": \"ping\"}\n\nevent: content_block_delta\ndata:
+        {\"type\":\"content_block_delta\",\"index\":0,\"delta\":{\"type\":\"thinking_delta\",\"thinking\":\"\"}
+        \  }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":0,\"delta\":{\"type\":\"signature_delta\",\"signature\":\"CAQSiAcKEAgTGAI4AUIIdGhpbmtpbmcSDEzRJWwc9/rEEILTnBoMQ3M0xWO/64sdIyUKIjCEgVv9Ag6TqpmgiZunrS4EaB3qDOoXP1OJoQBL2vS1rljxprhWYDf9HicLztG4FZ8qpQYi562lPaeU7rC83T1O5fFw7wCMdPatuQLbp7IwZ9+CZhmPRwFyb+T+1uaF9SeMVnxzJVYHIBCKxf6+YEa1mR096UKRqzMGRSurVOb2W1RzBR/hO2y0u8KdNec1cqZ0O6SYuxdCdsJZhletFEZ2Fyx81k4n/vt2in4oCDlIq6/BeZWBPH9N2ZAUIlOYf11hHzagbgkiGKcDrw7q9JiA5ppJ/RTbAss9FmCPmLxaUGEqSErmw9Fo3lNYMWz7RQlvuadeVlFdy3e7X2vsdKAcjtw4Rn8CDqtMAT7EZyBwltbb5p1+2+6pKi+UflkRnLRgUgPTpG4UmkzcYzYqZQbbhG9TyWf8A72dsWfrIHStOKdRrP59G+oZQdc9Tqo5+12HmztmHWqiPp3vk6kxBEHwr3+jAUuiekvKwkVYEEhnjIS3ixm0ozsKRyr/4X1/F01TLPuRH7GqcGgbfA2neT242m0lvmZMcilhOjscKSYl/IZlQrWCBK5dzd3uMUfb01opN/oj+o7MZO8ibiRQVTuBaXGnXHF8XRzY5YG7cfbDr/Fg4yq6EhOUTG2COp+pwERGRlNm/OekAGJcH3Am2jH+xCdhhMbaoDjtHA6torLyjTPSiFqQ9yyXBAjKdrOQtLhidNFv42MlYlqpihS6gRk1RHqntxwAOvhexe0OpDO/j1zkrO0mp3SuNSPu9jHnIrWmNmn4uZt6U+TTFPq3wZSKFT2SUW+F1yp6XHfR6Oe7KC81azY3imT/sPdaGsEbVIb0ULdY9R7ZikdmU6WpJ9dWEtJH3UQN1Z2Yhr/Hk636QJgNN0sSOlE31uaEMIWSvW8KjV8hXiYbn8WQPEPEyly/qkDQBQzoKM56nnpYMnRBj5xTHU2mA8XpHpywY7mp+u2SByrUiuX2k62F+jSBYdEW2tCF5zbV4NNbIONhilKVI1xKvV0khk1ELmHcAdJS8XGSGUA1W/Hq6VDohlNRDgaLPvtQ5RKItRg5Cj151UbHNf/mYSkpoPXPIkj5PsFJeQLFNZQAw7870dfoLeXDBNH9tfoGKUAZxx/90xyBPAGCDOwj2V30r3QyGAE=\"}
+        \     }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":0
+        \ }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":1,\"content_block\":{\"type\":\"server_tool_use\",\"id\":\"srvtoolu_01SGzqQ9pft9fTybjX6jCJpP\",\"name\":\"web_search\",\"input\":{}}}\n\nevent:
+        content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"\"}
+        \     }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"{\\\"query\"}
+        \  }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"\\\":
+        \\\"ggp\"}       }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"lot2
+        1.\"} }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"0.0
+        CRA\"}          }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"N
+        relea\"}     }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"se
+        date\"}        }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"\\\"}\"}
+        \  }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":1
+        \           }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":2,\"content_block\":{\"type\":\"web_search_tool_result\",\"tool_use_id\":\"srvtoolu_01SGzqQ9pft9fTybjX6jCJpP\",\"content\":[{\"type\":\"web_search_result\",\"title\":\"ggplot2\",\"url\":\"https://en.wikipedia.org/wiki/Ggplot2\",\"encrypted_content\":\"EusKCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDJN4GlZrwGt1PqU70hoM8VAMx/XJCUPkTTC+IjCvYc0bfqKv1KpHQf1Rcqs+NaokCkXqL1/IZdbtb7Na2O8XK0XWXhkpiQelt7KDo+Qq7gl6p0CR5P3w6tOCZMla7OwYg5XxtS5+wM6VsaNTLXPsp5zztqiRW7eHayOtDmOcXdErLJR+uruz14xRJ8/07qiRjLZYGbQp2khuJT0fLpVn5WpO1kKVAlldeGkxf5KukMj8ONGpq6yZprzQjofQziAAlp3z3GKlTjt2JrSwN2nqJFxKDh1jh8/oWsuwg+rgpHyPobhil/KEvngdgt/2EpYo3+DVWD6Hg4Dw21DTMTI7O6G+rFZF9Wbi5jixNeG0fRgTd7Odma0uh2XJQCcUyRUAeRztwYOMDkmJLesNCIOQmxDz0aSc3RHElVzCYA3FaznyT2CVZoYCx0v0ZCNGifnpOoha20NTiDC4QtoPUI208NXBVMOV5RQOM3TZYz5peOjao66CKxnX9CVcTzH/w6YtfZ+1ItLdEeGk4qPGLp1JU1O2yX8vt1qiI3s5xjx5RtIiok/OLiCMJg1yY+fDJP9nC+CImRzNjTFYQp8FsxndnFs2GWyHbSxRrgwflfZpXT4yhLK4g7gOMFmJFWT05GmSMyh2GVdpeS3JqOJ1H4nseejHq4ZdjhJ1PzbQYG4XIpkGTX8P7PTmGVb+YoImuCmxV/bCrIIbIlT5k/LogCyvYkJjuMhyO9LfrewbcGdReVFo5kEcMbA1SWDY27UgOdmuyzYudwcQn7qsWhq/tw17NSUcWGxygvfnY96gPhpk1sXaQKti7J6blW9XYP/u+qGcED/3mOZg8VCMFah2X3n62vipzcg5po88O4cCM0asZX/+ga1FYyjzIr41C9pzYpvheB3ze2xlclGij/dW6Hjb6aeQDCLx19FttG+LCPZumPDt6kYw2nHxQTTgLTU0k4psrmnCqcPTH0PlP3mwCOpgRlFwYQwhYQJarPrVDzD5bgOhNyhCzvQQWaqgwhkw7V1RFcirmEwxDFLhnEjL2dNYiJUjBmJ6iMB6Hy0UDSa2TM+cndIlA/QQPJIJFuyvTFsdizeEpphDieLYhE7S8BrQI7MUgwzV16H4nsxBNTZXe74oLGWohwbXcjjcykexmyIV+FmK4NRJUOK4me5MNyL6cBlp6psJvAqeGdVKJWOZnvfmeOXMlIBTw7uCZDncy982qKLhq6MlvxrjoLM+5XhTgO8iNeaUihHszF/g7qHrQPVq+wnbV3otQibE+wnMNdLAj9MBfTb7kqGqzgDQE2z3yydD5UTBjyNHGLyuRDR4rlA7uEdvpZApPF5EJhKsfe970xrOh9xEc4c0PHhOPadJSO0Z3BGqi3GaarutctqqZQmgO9KwJZ25qLwMHLSDI8CqBm1SPWSOI+8xbly6p5V99KMeQ1CseXUm7qsOZTqOo7qtgOq8aloUZ0u35sNiWPj5z/ES+IFteT4B9qIAuGoN2XwTx3iwvJCi8LZmeagREGFIUfz04thOI1bzLoumbG3kOsTx1TTNyHKaJe6cBGsb5tMO3o5IGqi1zYcQQoCYZEApG15w8XawIAuzjgVoj9iNW3Tzro/urkPMdsnk05FS0WQMvv1l0LmbM8wySE/AKvzZwBv5ineqwkQAqTXNgRT6C8IQtpeR8j3/qGh6QYI7u9gLwULCa0DnrtRSKw3sXr5hdoAy287mqzEquhuPxTeJAASMgPOg9g10txJZALvA2RT/j9caEadN0YEJQ20XuXNUydtjq4ymdAQTScd1cxgD\",\"page_age\":\"309
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"CRAN: Package ggplot2
+        - R Project\",\"url\":\"https://cran.r-project.org/package=ggplot2\",\"encrypted_content\":\"EsIECioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDG9p+lUfpdzawN10RhoMlX55BiUZdZRqR/+xIjA3nuYycC2Wy3yehU9tCdnJFsulz+A7Dimw0G1n+1AUWu97esvEraNhXdv4rfR71TMqxQMDm2as2Vvieoeueh9Htu6eIRsC9Mb7zUv2L3wOVKc5EcJRy9ipDGbI9fnuCAf2ov0QDUTF3KVlZNx9YUIsNiNkwx1+SmOerLwdBar2D39M8E1irkRpCNr5D0t9g0KC3JFZ88JqLp6kEZd2p6fZwrMzojZvPCQZWc/mqGoM481Ydr60G0prs5G9HK1NOCqn7GLCJSSQTNPlPrYNDyJNlLpwu7tPhMZRyxbcd4eIQOYM1SSKUTt8j23Y91oUyx5p+s2zbxXb0atcsoXDDTloJQRpJmQJWAoQbJN5681DRAE+JRZM6/ioMyQBE2+uZHqmf0Udg6SaWcjuhvWRH0dVpaepyEUAhv4c6zXkY+af3aNNolBKWJGKO9Cqn61ztfLEsfjeo+/ES8kjvnSb/R/qS2ZUpLXJvbcRvkjta/XRfd25BioZkHxZonNAX54iIvThdXWZ8ukTpfWNYHtLntW8G2weY5+z5u7Tsg2+1Os4mcg9PsGjkwa765QGRszDx3hFlawH/zsjr7YvwGMOr1fya4MonaWu+0l2iX9QYBQtjMcdQEO8HeexnCme6LM0aSiu5NNetjijqj4HiZHeokbcE9AZcrv/FI4YAw==\",\"page_age\":\"197
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"Releases \xB7 cran/ggplot2
+        \xB7 GitHub\",\"url\":\"https://github.com/cran/ggplot2/releases\",\"encrypted_content\":\"EokICioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDBa2ixx0hHLEcS+QwhoMStwdEDFLMR1z5OpqIjC+qEFuo5Whai13l42iLSgJyl0X/0i3NODYHtnQpIXQKG3JKlGSRgRgPbm2wV8mbasqjAeVjH2wk/GoubMxTUV8eyjjY/AfzQaPTswWqVt1PHY3UAAkIQZlAgG06/EbRx8GAkdoSbbpwJml/z5kr/18NfSY8uUaxy4XjFUGVi4ubIcD9fVL1VqaermpmB6wQx1x74Z4aBh+Y59jIlfUxg7rbi7q6GhmXAMRKQji/ilLpIaHHfNCb4rogawS+EY1CaxRIQgxvJdtCK0DGKD5wnw/cyOsZ6hG8a6VFuts5QzG7FstmgUrQPlk5yt19ll8Fz17CTfCY7EMA6IzhNjPA/JqLHrkTGq8vN8ITxSdZQwXauoRUADKc6a2S5SZ5eQ6sPAdYYQWEfpNCGZ2m9Z47wBQYjIorFAKeAVCKu7r6TcKwy22ZRBI6IdbofEZUrjE/s4/bkP834AkjqHaUNvO8xQqVMwuOmh5QZeItIfxmWqPl1EFXDMQTsndDnJl4cFpSo+0/WHN748b0pjCEGe4wTf9R8/v+gVz4sPaHXB+erU3Bu40FxGnpMiPYIcD240sCd93reOLdv7+oq4Q7Km4VEKR8yH4rHy5DHFJEdP//yEOuwFKneXR1qUJorN5Y++PvIaE/S/Vhp2jWrhXcLJmrZucBi3NX3YGjBEWN4Ev6I5r6obVen/uaWW9IXVNuP1XgHun4En/sBumFZ8cRplzOsUxo27/njjDtMXyojTp+hkHYvDbws8DcLl5sdoQUEQzp0CIhfcqf/59iMDqJd8NgcYt2kGuTV7IGuYQrBiqrLVxXniGQqCUasjDbO/JUlUAgHyhegdRXNXgY4ZM6s2tXPGp19oHJ7GrocDO9aFwuSLdCKr51ueG+t+KiMJGmoHq4gfq8wwHNo8PumtNdwRY1nNcmiUK8CyiB0h5rQLzGWfzoSPLHnF3OkutdfuEkU9hP0yVTEi5SXHzP6xoIQqgLkkjtUq0q8sqc7SbEgM/FRqeV0U4RVHJLy0nm7bxajlVhjC0FWILeikOyIVwomw1jih8Gs02HHa8KuGSkW4F3yl7HdxIZ9Gs1B1CT2595LYCYYMTfwNklyC8r3WP3+Gu85oRtvY81up2kuq/NGf3fDJGVni7x9J01lLp1YqAcaErG9HjvzknkRYX2HxDmg9hjdL9dXMgB17lOhFOasDMD4XEyE93v0aN3GqDO9U6mSjSqD/9nrAxC8OX3RS98k/lTlgGUJ42fcJrX+ccPS4vtIfF8VWV/WuZJGHNv1WhO6ULexgD\",\"page_age\":null},{\"type\":\"web_search_result\",\"title\":\"ggplot2
+        R Package Stats, Author, Search and Tutorials\",\"url\":\"https://rpkg.net/package/ggplot2\",\"encrypted_content\":\"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\",\"page_age\":\"5
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"Release New CRAN Release
+        v1.0.0 (major update) \xB7 maraab23/ggseqplot \xB7 GitHub\",\"url\":\"https://github.com/maraab23/ggseqplot/releases/tag/v1.0.0\",\"encrypted_content\":\"EtAFCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDA/a7nH1P8BxSLVbOBoMlbAHB8kqZhXst9a3IjBpBF2yGS2BIkv+sI91CdgvnwMD7Tk0bAVFMHgHmqr73yXYla8YZSbJ5ynyG/vYjBMq0wSoqMhkhTLdroBe9qLA8HuF5wnj+wbVNcf3wcD0UcQWqSfYjGrWpozvNL7/YdbJjTFfKD1gpJyL8jwMDReFmdGB8HE9bMy0TaJWrRqMUXMmk79ibCiEUROvJvS9R1rytEBqdxatCVjtzBGnN7+SlUE9ObFvEnt9d0hbTduyUFTOR2HyZHQVo6kTJQIdCTwRVaA/FH7sEPLrIGhfjavgUqXyFnkhMAxdJ0tVVAEI0MrdxheBgl1sX33HIWw6Y0ELxWn6nbjiHVUCRhxrOrmMR11KW1H2vVTFBCpb9Ld1I+N/a22JxZ0E42nmFaHhUMe5XQzM21KZ8HXOWHxrWAdwz0Bp959nbiYODg7bLNMZ0Bs4xCwBHBz+WIbySQ/PzCO0fUk/CmQdlFhH85zMNx5rNVp/duZCSf09tnirGH+PofeCa7jxSrNfsEZU+txRcZQ7i9Qm1Y8LFc810M4JNJI5Ghc0WwYiQxSwdzP9EzeupC0g7nEhiNcyKAZalJsO7A+asg8IdlQX0STdNww/GDV08+pjsdkWHbN4xDsezxRjH9im5mnJysG+ZTNO0kkTSTDnthYuFtaewu9SbSgRiUFY2Ka7AHqLK/b80Fh+lCncEfmADnJCewc538bYZH0XivhtDwPpENb71Eb/OaDmKh/IU6ygiEsiX61fOY4+tfMbxe2fZ9zlS4pJ7H3e+KbhGLGgvyi3+Rck2pxrjZ/XX1j9oGwVI7wQxIafYJZjiEXTmDZaM+j83kTOA+WB/XKyhW+vBcBqz3nPOUPGZPdFqoay2zM1Hu4TGAM=\",\"page_age\":null},{\"type\":\"web_search_result\",\"title\":\"Index
+        of /src/contrib/Archive/ggplot2 - CRAN - R Project\",\"url\":\"https://cran.r-project.org/src/contrib/Archive/ggplot2/\",\"encrypted_content\":\"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\",\"page_age\":\"1647
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"ggplot2: Create Elegant
+        Data Visualisations Using the ...\",\"url\":\"https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf\",\"encrypted_content\":\"EuEFCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDPhVryenHekQ8X8gNRoMYPCLTyVKVK+7MkuwIjAERO8uhnEgBbGj/uEUjU2IMu+qdiHMgOBue+xVDH1vshLfWGG0WSuyZv9f3TKexgkq5ASiC0C88JaaRTKUE1CD6XfQbuLxDQl6GLf3qbCj3qkq6iP8RbgGriplYwvpSV1OfSmqzl6xmDsn6KX7eFb/aR+8YBdBJInLjIYsnbOk9qrwOC3ooMVpjoxWGwibhAZk3qVjeiWTLem/x91z0AA+j68bWlMg1fI0LW7IEBBJNeGiTYeoH4hPYDnYCxugnUC6EXpX/WG9Y7Is4fbW24uA24VuMB94iQ5Tw5lpBUbvR2Bs7Ogc0OSp+nGjB6Xo3svaKaMLheOjLeOdOriUFkmCQxNUmX8zbJEtJhzylqnZ+FhyRcpYzFMBF4UNFQscf12V0myC/yIq30W2XleqqG8XgUb8ApdSAmZiocQ/C/JhSVUk613Yp1dmZgAn0CHSvlhGQMI15b3Jz7BOfzCfJ7ik215ZXKkxhGJUqIewteBDBWAZPx3vx6uqeifS2U+FE4vOy8i+AqyKciPxDW2E35s+ysfcEOs4/AcdIqA6FORkX9mTfW+yOuOIz9nh4iJ7JzBcH6tqGyHKVtvBjfokubaF/bOKExl2HnI2e3x/X5Ccdo+qEXSaXM0IpIKpYo97/OACIKxAlrMg/BtJNiBornLuyYWtcJ5Qaj79hx/fdhjN84tuuFQQ/7nwMT79iXAXMEqFry2qwiGum9H7wngrG9O94hRNJ0lt6PtCguMJz8GLfnAUuXqK9m0GWx7piZOxZ54ZKja5HGjbSz3UegRmSVlkLURy3kyLgXm6+jElRIJG2jhvbtETU7ds02AtsMOjH6GkaDs1cnLi8BiAiaN4mR7K/iamZjy+lYQmA754LXGWaHxXYu7oDsIYAw==\",\"page_age\":\"926
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"GitHub - hadley/ggplot1:
+        Before there was ggplot2 \xB7 GitHub\",\"url\":\"https://github.com/hadley/ggplot1\",\"encrypted_content\":\"EpYJCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDGAaxFhW+KWAZ+ovBBoM1BD+/HF7oOYk+okEIjC1RHPmMMNc5bXTVm0aZ6z0Fc+l6bmECFvpKzRcojOSKyR1upN88+lQMjVCg4x8BL4qmQgtfao5jNfL58Gy3W9ZC/XFYaJb6j0QPejTfKStGMZkV7fXZRIW5jF/fqMsLMPWUDkkzDHKAY8zqE9AusgaQefejC9N/Jqk4aOF5pvELdL7GxWEOyAAyFdn+aM4jjEQTz4L/VZRUUkiMwnJVy1XhvnF/EnsfUcYzluIGoiYDfX+3nMJnKi6p/f/uHqahJQYqC9F3/jWehYLV8fNJnoJYpwlUUL7VWH//Fm5q0NhUITz/dGbl44XPNXgSa1SR6uSrWzZ78c9N00hj+/JozFBe2etZYkeJd/oT7IPwUGrhdfc32nD86TffhUNYPPq9ObPMcKoJK3S8gh901uMr+cXkqDdziDRQIDYrRwV1U+/M1UnDYaBE/VBtEDznvSrk85s71gA7AyUy9x72uPPsyMDRBgdoYjEtrv0cNbGCAk7+5gMPpW1O4kPV/4pg2WbnuSj6pHPRrYiS9gKStg2yW7iGVJpBJSDoPJIj3LuAAzH4sAW7nfOABlmgq2iqZkd9590nokBewN5Y53zIqUUJr2z7ekddxoCXnVWV2vHuyB2ze0i28Dz9ppXA5gRBv6PNuCO41ZDPt0c4we92/ErvgeonAQPifKPqmcqI+YcZER201y/FCqgrLRLC4UC5d95w/5Oi9cByIpOsXZefUn6GiX6rB1U8FPZv0UKP8afJtUkGhjBDIpXEEGVC7annFO5b/BdLcF5OJyaetq/Qof0rUAnbt15vP18slrbobFWVFxO9ZiYstnfBTf3NASXJUhi3c9c6E4LMJVJSLbnnwkuUH+CoamLPfPu0yV6C7H7+OhE6TC+h8jqSkJ6kOE+YRzZGYalPRpSJ7O3UAn7bqT5EA2U5lwztyvzqNBkbzQB+5vqpZ58lQnBSISZqC5T3DDm59S8uZRi6wlMaIuM5a4buT0xJIbBprRpPrQS5eiJMlnRjbHqFEFvCxhb5VMmWY1Z0FQj9nEcUKEJWEri3n6CL6ZXcmmCcNWSG88q87FmO3ZMyOzIgOwg5nKDe8VKKWg5wAFsmPkX6Gt4rHSu00H7DqGg1dGmqsE6Iw8BHagthHRqJcK5FSKtO/fAJ2jYsnOKVsS8G/QIL7yCwzYIvrEzYA0/wk6VEIAu7YmdNO5rxAUMm0D6FK1C+/5oUGxuZ5rUyS+6rWlGEjQudS7Ar+VsQEGE2D/DyOGhQq3XXBKMxzpRQxwhWwOfA2Y3AOVNyAlaBQK+xOOtheC7Dndsqv9YQFIrts9Z8l8uDzK1kB+m5aRCuo+aEOidLbmYpHBF713732JNVqDnn8nUwAkG7foFtMuBYierQp+kBiftZvjdNt/OdM+nX0HLs29EwjKSujkl7B22qiV+EzBAmC/JAJqUETVFt+4p6nPeJsz97nVY2cAHYq1ZjvBqmM+IrYfFkRgD\",\"page_age\":\"3802
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"GitHub - tidyverse/ggplot2:
+        An implementation of the Grammar of Graphics in R \xB7 GitHub\",\"url\":\"https://github.com/tidyverse/ggplot2\",\"encrypted_content\":\"EvQHCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDL13hmQGYl3omuHSAxoMh4IZM+UQ54QuGCjXIjAjCfn/rGS/5oiQpnW9guLVTa1ONCaPcqIpMlCFusT87QLMHxV6/8BqOJHHP5lrNIsq9wZe2pwWVp0f1AF/icyMsOMj9I8BfIUvwMhKaiD+TeBhXmFR1zd0vU50/BnZzo0+oiKTXqHeYwx3p4r1SgvDyO0+PviMxdcWPIN3rZdnUR+ItBGl8lKrqJk2LYr/5Rwg1BFoL7dWzI19POoG4I30CuBoPRBqDfy0KfWXi7pXlMKbkqcozNmz19TFBEuoNOYID95STIUqcYyu2gUeJRleIXvTmW/cnnEY4MslGx5LTZcvNFcIQ1VzMHjq34CnYNgRVe6cpMf/eATVjxXzngxCRZP7LjNP4YvEZXmVK/Cx1V9SCGNa634Kab040AFcAaJJhGS2Mopco4Ti/opxAhws9EYLMQJv55JF8n46kU9JuK8iXqYKBJD3otBegYS7i71HPD5q2KlFv3q3LlC9+ztfAkxHvJHiBIU9LLdeGRFtJcJFa1GO3/5s4nThUv00bVbpSlqFSueOrlXVolDSQSls4DON5hQq9G8Q6oVKPyGSU/VueghQjjDLPkZ5MxK5Ekn8a19YsvlFvXMQ9rzWlbPmiJq9blNfFk16ShhBSt/IgSBxAOkaEm7Fxwt2x6Fadh+9dPC1+zKIKkhAI0YimNJpu9QdPDpJQf9e3oz75Wd4PH0j/E+VeUFvHxh9KbjYN5idMp7rKxG9CO+U6HcFX7jRhEYEts1ycCu9x8grpXVMH0fFA5yFEXk1e4Iu3dYf/IYbjiN/zgX4KfVg3lj9tPpFjFez0y5HDev6vtuDs/hr7105cbB4bMsyvRjyR7ncO3LnMS+RfY37XmCUZUc4fY1BgWKexg43t0txSL/tLFQRSNI2te4R+xGLSSFk8G+uGNt0mOp0hDOl8JsXQ3p3+W1zrfGeFKDn5zpYUPGhLzV9tGPI1FWcri1cNEx2PXa+UnqxLgluU4RMcV7MxLTxFxWIgiheDUkPMHX4TuMHkQ0jVf/I+7uVcRPxAUlkdfi6vNi11BH+n5gACQHaJbDwkqJgKqU4AH7Fwc6/LToijgFLYbO33AL8fVy8zo8DHvSFrFKuU2rIiiw4kdnDHa87RlPoUPvZUMoOCS7e0C3O3V3Cfdmali/U6MQ6WO1gl4kdCne2bT8xStUlB+SzjqKp/dbs5b47qxKYDVmpdK5Wk2E51xgYvb11lOLEAfwkpeZ1UGSB8zqbBhcshTjXmTBECjSyQgJ/jRWWG8o0KhgD\",\"page_age\":\"1868
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"ggplot2 - Wikidata\",\"url\":\"https://www.wikidata.org/wiki/Q326489\",\"encrypted_content\":\"EuAKCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDOAreCK0Yiv/9PuHqBoMGbDUnYJa1KdUdHEqIjDJkshwWQp497zi8GtysyunTG/Dze3zHndYus1vR7c8bD2p+YZHcJBWurzq//IrbTMq4wkR/wJJZNFDJayXp7C+ydrW4dG5ZrTtqggoxBYKBdZwGhqy6J7TMPwi/e7ZBsH/O6wpV8JyyxXvrrOlBOf0e2JLzgwi3wuMoH/1FDFs06mk9QW2j3k6yEge6LpKO0wDMEFrChvQz7k3HYLguzBEz0q9ue6+OJ2XiqCfWguCUgzA64a/m0RhnUSLKV7bAPVO24CXvx9w0E2saSsZAdvhXAZYC0/tlpaVV45TdlobD86FlGzdgsSqdOOBq81TU7IoyQieACRLZ4xseMlpWCYWhtswzS5xHqN2Mtd8KU0g2/GURJlaYodJW3skurREnCMJUznpfBMcp1IVx3Lxi5529fnpzG+ww8e3sXL16hLDnPh+HEOVewAQissnCK/wIWKwpQA5wbjwthYY42xpvfT4IfhlzYLaXtHowrS+InjIcGFyFPQKpC5XKuQC/c+JjsCvWXdLqAjO/vkAxDDY7bAivTbKqUIST6hejdKtLHW0CHJBnhZPErvZf3ITqRiHlMXOtj7bapjh+DeyKWILYJKi4D4zDD+8qYBmY9yb6GDQ+pzbBAR6Vd5WThygnc+UGrw8Bbfa8Weh028vv+ecBI4WLr0Xf/UBgY+OjzlcKERhhxOrW6EQgPOFTx6n7w//CWfBDU85xVDQ6CQ2bSbeVJ3vgfGGRCaF+4x1isfQsZ+6sKwABBfG8chwc55t5PLjn4yjb6WqWtk/EnteykJ+Ydbk3f0gF4w3AqvlXPDrgF+vNzcISqxI3Va74LgSaUe+lRkqWqoV2C/9D6Rq+Zo/W1jpzysM9oUGfXf2lpfle6IcIi+blotmYFwTVNLDbU1vPOHw30x6D9HKGfSwy6mwd19NQPmOD5nGLdx3kWl1VyH6EO5HYOomYdyZRCiDAsYYCyCmQfylnQg5IZuChmRSqXUVtC6gwClT7AqeWG0rcjSFC/5xcwDiPafXSRWYrHaDBa+jHH4XMbJs6i4fT82bKdGEAFFUl6+YRUezjuqxki/iJ+ALPEUFDBGWNyewyd+GcwIB+EFHAynM+MfFL7TBBEPqBst9L/drS/4KP2YhnCml12ueExPB+OqQW4V3GVsjEv2FjM49oI8ZqJZa3CTnqXHXzC9LRoYIRX4xTqiIDuQmLaEI/P5VQEhaXr0FuOAv6zQ0c00/Bgf01S3vT0A4JEcnsbTK7gzpdqGSlIacfKkMpHNAUzf533iSSD0CT/L91jkJDQmz7uAUnNTYSuEMAPef/7dtlQH5NlVICIvDOmwGv+5b/GpzdReibAdLzA+Ma75w9uRRK6njiFUjuk4qymfrVGXCa0g5beNXWDroFivWIlAPBpJM3vPgeHZXqBvPRJSeV/Arm1Ltr/bZCWm1V8ioJx8jy56QQKiYZ4aBEQXeoB95xWbOc7Qtf9iK0mZOsxJZC0ElwRtftCnA8XJF4d2sVmU6Zt7GzeWwodY/9mTn8F5l7YKXE4IsjkEhj4QBTfoCBBt92Xemlot6cjbmnzn0OVizzs0BjWRz/Sgez+UO4DojDB5163QpalsChcCgkyP2riIhghwp2Zo88Xy21O7OvDCZpt/Ach6lvIm4H8yXAFd8SKkrvfPnl3G9RdwpOJgCKeySbNLYYnLeGLH8YhlDbl1AdjbUvRgW1y8POn45Snaqu4vF4RYU+O46oELxLZobKKJ5kaEYAw==\",\"page_age\":null}],\"caller\":{\"type\":\"direct\"}}
+        \     }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":2
+        \          }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":3,\"content_block\":{\"type\":\"thinking\",\"thinking\":\"\",\"signature\":\"\"}
+        \           }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":3,\"delta\":{\"type\":\"thinking_delta\",\"thinking\":\"\"}
+        \     }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":3,\"delta\":{\"type\":\"signature_delta\",\"signature\":\"CAQStQgKEAgTGAI4AUIIdGhpbmtpbmcSDMz7GxgMw1ZaRSKcshoM9K2oWIDq23MsKyO0IjB0G838w8smZ8Jg9kPFtzZYi+5fVHqTEEVQSEkWhBjssBTyLdM5vfSotA+ErC0i/+Uq0gc5c0loaGaROD5hXqc8n2qx6lrxCSjdSMqbBfuGmd0egcY3AlMiWWDUviTutje4Nr/FiB5HPcjki3O2LnfD7OMHs14uJe5QqeUuu5kI9/ZYtcIKasoQkWvtfsmG7ao/fokoArLST6VtqhPGwhuzv8klQKSKBTJ5fkF34jhgAy9C6Yuo6r6eoND8KXmfB/roP/BozuSYD+fdxOiaBdOaatYwSQ4yZFF6BYZ4/hCRyIYk9IKGRfMommBe5adVED0NMzm4zUySLEv1R6F+eGn6WGpA1to/FluxQ5bhafNBbVa3hTH4b+Gcq20z7tXnQuIzK3iS069XzaA+Z1BX15rtBP+GvQflpjrlr15WuJD1qH9K1k1RrFum6QRNMsV8x0D3FQxGceZa6pTv9z8utGTzqSoIiinf5QPXpISyTTy2pfNzZRQjDggBrZ4ZO9x3kk+I5fnq0LWWlWkBi+7VwFFTX4V8Ou4LfklxKYzb0HZryBlNrluK7ba9bRMvhf9erdQw1zvJspucOn5PbC3MlFKihSkxZJZROkocVUmXlorL94vgnylE6OuqGklaTufMxatmDlxS0HZ9pxjnvDAzi5hWBuCQszgQ6N68bAIxZB8IQR72W69vjalekW6J9SSe41o5pgvqcoQmlr9vlkG8utK/BMG6KQ/bl+gHnXHEDMFR9zOVtIvyvtkm+qR1Ivd4V1hqTVi5PiHGDyocefApQOC2D9bgEnA8vusLAUm2x8Kc2hLstVuo9zNLikFjCNr0hUmvR2PbZdWjxT87S1tSNZ9MvikBvtOmMKLYyBZQd2L8X4hUcWtH2R7Cw8hnuuAqSIUS9I8zCOtKXp5SBYMQ9ub4OPWpZT0NIhtg5U2mTYr0H25NFj+bRwyQkAKv8OBfNjUSILaQ8yuscrFafHmmKv2CClgsLv6cmRQ3eMKlHBMwe/AjdRtljNZVKHeCe2ZfnEFxx+5+wrUe6pIIhcR6rLvfD+67wj/U+X6T49RDG0eaIycp81jeTeDHNS+oyiAb63ZIjyu7RR26aLlyGmsiPM0GASElN5tf4qzzlq2ptvcpsSc/JCiXAwCbUwbSehxUz+aWbxaKJMrhmhzTea94ZC4ujFtU7GFnIuwdnkjMHbKnhAG7mez1uvgOHjVowkFg9ihaBQY/ZkLyDsp9mmwuCCOZ9FYC8Nrp3ye/OWyyBjwE2sRt9rX/wznAnHidI+4v7rl7lHY3OWEGhF8eJlEl6HmDaZu45ZJoYji07POtTf2t5UqPeCCzl+8U6FzSv93akPAs/HcrOrMJoc/UlZ7Bj0MyP2za1MUYAQ==\"}
+        \    }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":3
+        \          }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":4,\"content_block\":{\"type\":\"text\",\"text\":\"\"}
+        \              }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":4,\"delta\":{\"type\":\"text_delta\",\"text\":\"ggplot2
+        1.0\"}              }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":4,\"delta\":{\"type\":\"text_delta\",\"text\":\".0
+        was released to\"}        }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":4,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        CRAN on **2014\"}         }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":4,\"delta\":{\"type\":\"text_delta\",\"text\":\"-05-21**.
+        The C\"}               }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":4,\"delta\":{\"type\":\"text_delta\",\"text\":\"RAN
+        archive index\"}              }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":4,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        lists \"} }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":4
+        \         }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":5,\"content_block\":{\"citations\":[],\"type\":\"text\",\"text\":\"\"}
+        \  }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":5,\"delta\":{\"type\":\"citations_delta\",\"citation\":{\"type\":\"web_search_result_location\",\"cited_text\":\"#
+        Index of /src/contrib/Archive/ggplot2\\n| \\\\[ICO] | Name | Last modified
+        | Size | Description |\\n| --- | --- | --- | --- | --- |\\n| \\\\[ ] | ggplot2\\\\_0.5.1...\",\"url\":\"https://cran.r-project.org/src/contrib/Archive/ggplot2/\",\"title\":\"Index
+        of /src/contrib/Archive/ggplot2 - CRAN - R Project\",\"encrypted_index\":\"Eo8BCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDB8p/54cCiRXIc7ZNxoMBNc+ShmsC9METPSJIjBGlRBOZ1l68tNAk2BDTdzuz1gKrLUnvf8/9ZMbAkVc2h4ZynVC1GSB+08dRvPP5iUqE8uBiIhOAeveuBtmNEZB9Fa/K0UYBA==\"}}
+        \         }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":5,\"delta\":{\"type\":\"text_delta\",\"text\":\"ggplot2\"}}\n\nevent:
+        content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":5,\"delta\":{\"type\":\"text_delta\",\"text\":\"_1.0.0.t\"}
+        \             }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":5,\"delta\":{\"type\":\"text_delta\",\"text\":\"ar.gz
+        | 2014\"}               }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":5,\"delta\":{\"type\":\"text_delta\",\"text\":\"-05-21
+        15:36\"} }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":5
+        \    }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":6,\"content_block\":{\"type\":\"text\",\"text\":\"\"}
+        \       }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\",\"}
+        \  }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        and another\"}         }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        package listing g\"}            }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"ives
+        the same date:\"}     }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        \"}  }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":6
+        \       }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":7,\"content_block\":{\"citations\":[],\"type\":\"text\",\"text\":\"\"}
+        \        }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":7,\"delta\":{\"type\":\"citations_delta\",\"citation\":{\"type\":\"web_search_result_location\",\"cited_text\":\"(2013-03-02
+        15:57), **0.9.3** (2012-12-05 13:11), **1.0.0** (2014-05-21 15:36), **1.0.1**
+        (2015-03-17 17:49), **2.0.0** (2015-12-18 10:45),\",\"url\":\"https://rpkg.net/package/ggplot2\",\"title\":\"ggplot2
+        R Package Stats, Author, Search and Tutorials\",\"encrypted_index\":\"Eo8BCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDIe5ztiDQ2pPCd0WkRoMeXM+lnEFZkyXDe21IjDGS7I0qBfsx5rPE/7bhyRcoFRIz/zUxoUelkOZkR7LbI1yBYF+DN3lUNrNTHugxasqE/lgLprjdT03Jj4scG1A7DmztgkYBA==\"}}
+        \     }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":7,\"delta\":{\"type\":\"text_delta\",\"text\":\"1\"}
+        \              }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":7,\"delta\":{\"type\":\"text_delta\",\"text\":\".0.0
+        (2014\"}            }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":7,\"delta\":{\"type\":\"text_delta\",\"text\":\"-05-21
+        15:36\"}    }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":7,\"delta\":{\"type\":\"text_delta\",\"text\":\")\"}
+        }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":7
+        \          }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":8,\"content_block\":{\"type\":\"text\",\"text\":\"\"}
+        \              }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":8,\"delta\":{\"type\":\"text_delta\",\"text\":\".\"}
+        \        }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":8,\"delta\":{\"type\":\"text_delta\",\"text\":\"\\n\\nWikidata
+        g\"}              }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":8,\"delta\":{\"type\":\"text_delta\",\"text\":\"ives
+        a different\"}     }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":8,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        date, \"}}\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":8
+        \            }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":9,\"content_block\":{\"citations\":[],\"type\":\"text\",\"text\":\"\"}
+        \  }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":9,\"delta\":{\"type\":\"citations_delta\",\"citation\":{\"type\":\"web_search_result_location\",\"cited_text\":\"#
+        ggplot2 (Q326489)\\ndata visualization package for the statistical programming
+        language R, implementing the Grammar of Graphics\\n\\n- ggplot()\\n\\nedit\\n\\n|
+        L...\",\"url\":\"https://www.wikidata.org/wiki/Q326489\",\"title\":\"ggplot2
+        - Wikidata\",\"encrypted_index\":\"EpABCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDPaRNztAsMbLmVb8uxoMdIw1nkY9RCDf/WPuIjANYFo3IY9fGcz9qe3nbsRNtPYiPbazYX1C+SsFZY2rdas3IEBco5SQJWvmMS4FUF8qFMogJhDtyBfwkyyUHQhvgMQIuSNtGAQ=\"}}
+        \      }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":9,\"delta\":{\"type\":\"text_delta\",\"text\":\"9
+        January 2015\"}            }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":9
+        \         }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":10,\"content_block\":{\"type\":\"text\",\"text\":\"\"}
+        \             }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\",
+        for \\\"\"}           }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\"Release
+        1.0.0\"}         }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\".\\\"\"}
+        \   }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        That is\"}       }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        likely a later GitHub\"}         }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        or\"} }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        release-page\"}          }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        date rather than the CRA\"}           }\n\nevent: content_block_delta\ndata:
+        {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\"N
+        up\"}         }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\"load,\"}
+        \          }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        so I\"}     }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\"'d
+        go with the CRA\"}           }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\"N
+        date\"}           }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":10,\"delta\":{\"type\":\"text_delta\",\"text\":\".\"}}\n\nevent:
+        content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":10      }\n\nevent:
+        message_delta\ndata: {\"type\":\"message_delta\",\"delta\":{\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"container\":null},\"usage\":{\"input_tokens\":6,\"cache_creation_input_tokens\":7174,\"cache_read_input_tokens\":5726,\"output_tokens\":625,\"output_tokens_details\":{\"thinking_tokens\":333},\"server_tool_use\":{\"web_search_requests\":1,\"web_fetch_requests\":0}}
+        }\n\nevent: message_stop\ndata: {\"type\":\"message_stop\"     }\n\n"
+    headers:
+      anthropic-ratelimit-input-tokens-limit:
+      - '10000000'
+      anthropic-ratelimit-input-tokens-remaining:
+      - '9999000'
+      anthropic-ratelimit-input-tokens-reset:
+      - '2026-11-05T00:07:04Z'
+      anthropic-ratelimit-output-tokens-limit:
+      - '2000000'
+      anthropic-ratelimit-output-tokens-remaining:
+      - '2000000'
+      anthropic-ratelimit-output-tokens-reset:
+      - '2026-11-05T00:07:04Z'
+      anthropic-ratelimit-requests-limit:
+      - '45000'
+      anthropic-ratelimit-requests-remaining:
+      - '44999'
+      anthropic-ratelimit-requests-reset:
+      - '2026-11-05T00:07:04Z'
+      anthropic-ratelimit-tokens-limit:
+      - '12000000'
+      anthropic-ratelimit-tokens-remaining:
+      - '11999000'
+      anthropic-ratelimit-tokens-reset:
+      - '2026-11-05T00:07:04Z'
+      anthropic-workspace-id:
+      - wrkspc_01D4K8epTDxMNmDoR6V5auh4
+      cache-control:
+      - no-cache
+      cf-cache-status:
+      - DYNAMIC
+      connection:
+      - keep-alive
+      content-length:
+      - '32326'
+      content-security-policy:
+      - default-src 'none'; frame-ancestors 'none'
+      content-type:
+      - text/event-stream; charset=utf-8
+      date:
+      - Thu, 05 Nov 2026 00:07:04 GMT
+      server:
+      - cloudflare
+      server-timing:
+      - x-originResponse;dur=57
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      traceresponse:
+      - 00-a02d318faea8efba60430302bb8756f6-ba43d5c67eb97bf6-01
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-robots-tag:
+      - none
+    status:
+      code: 200
+      message: OK
+version: 1

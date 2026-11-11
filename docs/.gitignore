@@ -1,0 +1,15 @@
+/.quarto/
+/_site
+/_inv
+*.quarto_ipynb
+objects.txt
+
+# API reference
+/reference/*
+!/reference/StreamController.qmd
+
+CHANGELOG.md
+CHANGELOG.html
+/CHANGELOG_files/
+
+**/*.quarto_ipynb

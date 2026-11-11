@@ -1,0 +1,170 @@
+interactions:
+- request:
+    body: '{"max_tokens": 4096, "messages": [{"role": "user", "content": [{"text":
+      "When was ggplot2 1.0.0 released to CRAN? Answer in YYYY-MM-DD format.", "type":
+      "text", "cache_control": {"type": "ephemeral", "ttl": "5m"}}]}], "model": "claude-haiku-5-5",
+      "stream": true, "tools": [{"name": "web_search", "type": "web_search_20250305"}]}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      anthropic-version:
+      - '2026-10-21'
+      connection:
+      - keep-alive
+      content-length:
+      - '305'
+      content-type:
+      - application/json
+      host:
+      - api.anthropic.com
+      x-stainless-async:
+      - 'false'
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-timeout:
+      - NOT_GIVEN
+    method: POST
+    uri: https://api.anthropic.com/v1/messages
+  response:
+    body:
+      string: "event: message_start\ndata: {\"type\":\"message_start\",\"message\":{\"model\":\"claude-haiku-5-5\",\"id\":\"msg_011CgioFwFJpzG24mjp3wnZE\",\"type\":\"message\",\"role\":\"assistant\",\"content\":[],\"container\":null,\"stop_reason\":null,\"stop_sequence\":null,\"stop_details\":null,\"usage\":{\"input_tokens\":4,\"cache_creation_input_tokens\":2857,\"cache_read_input_tokens\":0,\"cache_creation\":{\"ephemeral_5m_input_tokens\":2857,\"ephemeral_1h_input_tokens\":0},\"output_tokens\":2,\"service_tier\":\"standard\",\"inference_geo\":\"global\",\"speed\":\"standard\"},\"diagnostics\":null}
+        \            }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":0,\"content_block\":{\"type\":\"thinking\",\"thinking\":\"\",\"signature\":\"\"}
+        \         }\n\nevent: ping\ndata: {\"type\": \"ping\"}\n\nevent: content_block_delta\ndata:
+        {\"type\":\"content_block_delta\",\"index\":0,\"delta\":{\"type\":\"thinking_delta\",\"thinking\":\"\"}
+        \   }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":0,\"delta\":{\"type\":\"signature_delta\",\"signature\":\"CAQSkQcKEAgTGAI4AUIIdGhpbmtpbmcSDJpAdw5eK85qaRHdjhoMZD6duB/VdTZQAKBuIjDjqhnQxpGeXrr8v93GwOj6KMUzq7ZeaD3keLkxqCY7dB+tho3fKYd/Pw3tRQVBqLMqrgaoxFapEvadXuwkFvgu4Jpgm2iiSDy05qSYaGTmUSwIfI3V60MnD2Qs1Glh4a7MSy1iCKnCp6QMqyl3Mk2Ey1ORjahV9KjmGEbg2efJ0MB2QB+g65+ixs+LAAmt3luoy1JXCVsN9VsiVbokyqdF54LD/Bihko2ORNod5cd8yPrfe1R65t2zYd4McbcEvjLwCCPP/CKBsQJnYvkHYzJKqnXestbtg5MCo6Xt8apW+NzTbljtB1z0JQtuFCdIo+1DdKbU8qjCsonlYjnttb3XGST+bW2SLfvjOdohnZNlOuDPkpXY3wYzrWsG5T0p38X1nH77GWORYlIXRZSiwc7XJfRBUQh8YcYN76m63QoZEfCK0bFAF71O0rj7pbHw5gQETFHSvy2Q0Q98ibwiNiDpD0biDjxuSvwqsm0hJqfmM/VienEpzDXWVNOQKcuSPJngiE0eDHVn9IyDhA0M6FjoKBTk61t8r0wwHs30XX7Uv5QgFL97xCoapb7JbP1HZz19g+irYwE/+KqRD5Ip0G5KqRMJLe/N2XHWmyMOvwD8OGTdMX53aFILhjMzIf97n6NfJlrVd/r169OVKectkq4TQc/F+fBMV7wc866BmAr0VAjYBVpy6CHVQEWG9eeC9qMFBIi17Cn5a1ymIVqYZaf8/SPi0/93T06C5kPwLDpQxU4+GtukIWLYEGOG78vhM6ofqnLiJTCG4yDe1hTp16hi5Q6AGrA8EKxGRHOq4Ey7Ue2I5fKcy6pp0LItYvKaNekT7KRYB9Yqg4qBVvLItr3hUIM5/Yk9qUCEplYs7NFEg79K3SA1bA6NffvbdNZM4GMfn0/y+2dxiWHFBgAfwzwWoheiUWh+TLkE7OSaQMDhN41x7jtISwv0ETu23X3AU6YXDhoemrPJoKCSRG7CNYcy088sCOVnqmDCbM9/BUhlLzlfHiS9EfXT0V/CjTjUM9tXuN87WV72uTM5mofxguGIPdWwNL1ncqSVNKzHldlThJA/eTCN8tBO9P9Z9FBGTQ/RoXiEoIBC90larNtRAM/kO0nbkDgSq//bxLhkuO/AAfphAxjUnJJre9e/gJ/wfZXZGAE=\"}
+        \   }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":0
+        \   }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":1,\"content_block\":{\"type\":\"server_tool_use\",\"id\":\"srvtoolu_01QtsBKPWwcH3gtMTewXc2Ru\",\"name\":\"web_search\",\"input\":{}}
+        }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"\"}
+        \        }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"{\\\"query\"}
+        \     }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"\\\":
+        \\\"ggp\"}       }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"lot2
+        1.\"}             }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"0.0
+        CRA\"}         }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"N
+        relea\"}}\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"se
+        date\"}           }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":1,\"delta\":{\"type\":\"input_json_delta\",\"partial_json\":\"\\\"}\"}
+        \            }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":1
+        \    }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":2,\"content_block\":{\"type\":\"web_search_tool_result\",\"tool_use_id\":\"srvtoolu_01QtsBKPWwcH3gtMTewXc2Ru\",\"content\":[{\"type\":\"web_search_result\",\"title\":\"ggplot2\",\"url\":\"https://en.wikipedia.org/wiki/Ggplot2\",\"encrypted_content\":\"EusKCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDDkQi/YEfOe3Dwfe6RoMP+UkvZgGEP4wDxczIjAdfHUx9svkbk8kiH/H7Jxo5lonF4yPKFJwuPeXBNdijxEUtZbNkro4zTIvCPU2br8q7gmLUwQx8ipkBJW8fHRevJ63NAlZI2E3hjG2LmszpqqgcOP0QxPKuJ37RvHOYkvEJmxrkIEpdjy2NOmsBUYaEazliLKtfresZ+BDkEVcAB81PG0aVpb6cmkimHvy3xdSi13t7avjtcsISBvPgj3lxKvS7kP4iAcK2Z/qMDVBSr4wNctU4ZdeXgTBYY4c5sh6yNPdVilt5ItkJ4Cqe4ZN9/2ak64Bxt4K51sP++W/0nQqZzYtILsw15Zw9wqghTUdkza3Ucr/K113BJziFVRSzJBe+7y0SGlZfU7uDBKreG8e8SO/uq/I1lmT4b+gyg1az2H8IaJ+sJKYre0wtAgErmjcJq+nKXrWzDuK1aygkESSFAQ+AuObJQUPEpJvmAAek5dShH5aWcb9w/N7yHkNSWeU238nVt5458Cfj6aH9grhrNnlLIq1eGyDpg7msHthkc6Q0C8cjelFWv8AJJ0t0zPWP91z7g1vaeEcTKi7C34L3tRkXdcOQNBcaG4JMu7lvh+pJwh13rBFR4mnK+OaQYpr6w5zLFqWbHQG1Le19Ob0u0+M2z/Nbn7LQL77vPS256kp6uwZ+2x+Lxi34jOXbEaGe7M62WVH0WYy95bObIsYElsyViBxO67GLrJ61XEu/4I4OYe/uW4Qpo3V5fxIGPsbeXncGh5ezxKLl0XptkJmokqALJS5C3XPPM5my0PryX6i8hpbCFJlX/ZUqrLsH1w12TYLKmkpAb4HcPUXiseoaYAD8V/QAqmMu7h1+koySdhhlyPJm2xjQpz1YiHiFj8Uucupxb8fQ1azxM0vf+7wrKAfEfjtxCYLRAxx3KaOIGk2DMG3iizCgQDsJfaBDP9mPxfq9z98pM6nFZKKal/e9UZOr7bAcpOI5lrgafbLeO48Cg6OVTBx6d/kqKbJCLK1zhty3F62y9YOkrpSTIST3OJ8yLkhgGhqo+MAjo6P78ASqjOAK6Vs1lGBc96qBtY8f0+GYXb0K/cQAjGpIvKxdJPrBiTtA+zbnHRJQyOh8kyyr7ad51Yn2VrSr6cFDCrNNfeoQLndl/NDfYNgJdsOapYHBhhmS06K6OTXFEc9g9nB2jBdHyv809vKP7HcMGa185KZ/GRdaZI/yrUbeqODE3cZ+1GyGwGqH4CuKNzA4A2pGwIwXr8xu6FM8hz+9+DAoHs0dFC2zW+YDOmRNSZH7ONQQve0tMBmz+BKvJL17DSc3gRYX9WoalfiT7vv5GIkTmFD6kRyL1aWEkVplFBtt2Teei4/Xpv2/K2FXy/gWJHrcMw20M5zM3ODheGaR+Ldop6CCwgkzLiZ1F7GbANhb0vMWFCAxJvbHLYcsvMeikyL5ZoEiDYgCzj2XO8W14Uww2/C3/c3YAWatDuuOvlCmim6IuWbjl0LrJX09mRJcZfzIYBGb+jVzqDK2QXZpekXNrIxXo0Su1mIEvKIlp+QWBrsxDvdct5rPAtAKnL67M387GEEbyZcYtX6/3TBx0Ed7oASooxulIeKklSOaO7Ez0TP7z66NMBoEU/6rjIJqSIP+F/3mJDWuJt9KMHLtdjTPi8azlOiMWV/MhlEyyndVP32LAFAjB38Vrc9wWI/i9uWbGzxID/8z4BScavg49VVcexZ+toIz/4iPbn+Nl/hRJ0hVxv3DJhREu0NACNlxwGDQ1NWeA4ZQYgx/GL4KhgD\",\"page_age\":\"309
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"CRAN: Package ggplot2
+        - R Project\",\"url\":\"https://cran.r-project.org/package=ggplot2\",\"encrypted_content\":\"EsIECioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDKl3AG6hTgpUcvVpXxoMacF6LkBCDSLMRJxKIjCexiZdxb6y0tLt7pW9odvic31tX7NthVciO5kYv2VSZs/HVKQDQnmCFDlY31x5p/4qxQMEJFX5prYtg49FMIm6KXY/d+ZTU3/GZEl82vI8R5rMDWExP/eJYDVKjna5M0ZS9lKfIDYMKd95YaLFp68HiDDddqidR9zKq8YPn2Nh8W/Br735KfFxVcxVTI+G+i3k0F6aU2YIsL0to0+xlV2wDP5oCHMmU8PIsrMXF6MNnAgMpM3V7TiufmWeA2tT5rvoZOGCAVeUuN9NIAYu7lukTcwkcsRyzhwv/n3tqgRLJlmcsZJfQj/CkErrBlfODxPFlWhTVaNW+fTPMtu6LS4v+rRTUJlQLQCXQIUGiso5gZMbQYDWO08nCI7Q6AR/KMKOkzAIC1FOGtRllBJnhuBkMezqv6SoxaENh6zVYQD4fKmRvCWGK611xhOWL0JVOX+Qk4fUCdHLkH0iCT6wW0YZm670EQEKNNc2piuVcMZaN22kBDaxoKFmnfmGaxTA3Xu4edpzkpdc4ApxXKjquBiokAr6JSadQZ53dCYCul5xz1itU6nzotnQq22bbztXYiGcIkeXWqTdxToLCuYRTx8OcZLCBfRUnKnlXpUYz5V5p5x4cmbfBdV9VFvG5pVqc+mruj4ZCTrvgVc8vNZ7Uspd9XpRjgHKd1IYAw==\",\"page_age\":\"197
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"Releases \xB7 cran/ggplot2
+        \xB7 GitHub\",\"url\":\"https://github.com/cran/ggplot2/releases\",\"encrypted_content\":\"EooICioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDLW9ofU+MH8oEysVCRoMI7Y/YB+MVqtiZs3BIjD0FWoYRCM6mhiklP8FXkr363CrnXBxYyPQioozqUUo1ogy0JpvwrjcwwL6V2Z/bsYqjQdyPDXZZa9JRN9VinfFRf4CPFVZvaBts+C1ZN6xDqHKjNvStYNMHgvLKCRhdHguDjZE271lSYOwdgA/CreIeNZVwDFIe/fZvmtbSz6THCApCm9jY2PN2W9lmfmfO5+66jE7Due9sfPxHYdlNi6Ux+v9RmAADtXaR2GzGbYBtZuRirCSc2Df22vJwxN/OPWWB1YGTTxPVrNJqUNV0x95t+RcfIVso/G4HCpI5VFWDppc46/aWk1itNT49otdqwa2/1aNndSs247NhSwsivlcst0baQM6pSg1koBesDSGb4lXKYEKRn2puR1Ch8rwAodAvEDQMa+KGUWLvIsEkbxd3nfQ39LkHJ+GJYWbgnM6y6qPe6IKwxp5+I45AlsLHEGgprU6kIypfUQEtx6iP3bkYA/HfbAfwIyRxDGac2LvY67/veTpMeiWC9mDbSPmouNZ4mNE51KgVn6EGpEoio6P86lOs5WFrdD6UTm8UJ8qXlUeLWVFE33fw4P4NEtES12pNNIakXw9qfDUKg9jcjPyXKyAersaawqOYXDJilBgERqEj8+xxurhcEP8QH/phC7kFcyhunvOB0/M6zCa82BKOrzSYYmvzcR5XHxRxu5dcanm6U8riPkZfpoKqQzOflCE0P3wG3GvMEMEDF6cTLdIe2O11+snnaon8E/R/cIFJzFzP+VI2oxtsGXUA/qtqR2HuZWZ2EKpNOn1qyAnGq2mN/yDr2aJkGqDRkWFKIJhoMWglW2LVFswgFybmkomPKJjWS+RSemppAijqrqVjjx41b6XwVN71fNOlr7r8jFQqbSInDvA6la2zVYqZsrX5MI9rLNdexoogvdeh21uyHlD9jAuMgVWb991enXzyGYGT+r5LR6ESomEqBstQEATCb+EZzRJrHl+S9ZzAYeMJEnQFyDFdB9WodsflIxk7ZHAEGOeuQVrAd7uk5k5edcZs9KuS1vdJGawgp7X2ObwZ9+/XlIkMjOjlRUzX7DipvtRAy7k/E5TA9+zDDiL1Xmddw1+rN9a4Tt3Xy2a/ALb0tefCv7s/f+sIkIb/3UOjkrygKmpYyL11+To8gJGNHhDYaan52Mi6gCMHOQwepjdCwzhZNGM0w3L8eG+ukrcg0YkN/S0AeC4LF+pd/sxBXhp1fL7eTPsgO52NrGnE9MXEqgZU291kkADtKZn5fRZ+Lqc0n+dGq1dhnZhEnAtMpn5JW8YAw==\",\"page_age\":null},{\"type\":\"web_search_result\",\"title\":\"ggplot2
+        R Package Stats, Author, Search and Tutorials\",\"url\":\"https://rpkg.net/package/ggplot2\",\"encrypted_content\":\"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\",\"page_age\":\"5
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"Release New CRAN Release
+        v1.0.0 (major update) \xB7 maraab23/ggseqplot \xB7 GitHub\",\"url\":\"https://github.com/maraab23/ggseqplot/releases/tag/v1.0.0\",\"encrypted_content\":\"EtAFCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDF0p1sEeoL4myz7hFhoM9Z3o3Ol5cGrxHkC+IjC7SzATK/ggYc+kB+7BAiRLudh634tZmabx/UewUBd16iHBxkKC8IymO1gGmSsKX8Aq0wQ1hTDMr/XVlpkRrrFOMeBV7VzQMyg/5MmESPrwTob+bHgeU1CfaGEaXtTniriQ47XU86kZ3RDfxPCFWwzN1GsPHZ2Cshm4g/14d1jdt9z3eGalM95f+qgzewheyAuPkWxelqWPEYiTG0OppuRXoufBWLVmJXHqj0h92eZdnM/yBvA0oqEIlk+nC72h4BjHwXX1XwgYf8kNdR8wtQgdCRmR4R0n2FJWflGvHDr4HNdTX+E3BDjR18Vwsv/AFxkQ5UK/EUzJNHjq71ymx3DCHD49vUNPvbmtnnKmYDbSHKwclu5+ZJAJtI2OweYr4MlcT+jSSoJ/LBthO9ajs4EQsvXsf133yX5Od5jmQl3wsfPxnMPK8BsVVGn1iIgCQFlZXvXX46Tn7iSSwGd9uhY+vxYXUIeV6gUbIZx0VrlFvATQhMwKuudmp4KjeaVs9MLOtp+snh5npVbqGYXTu5JBRZhXqIOYsHUtDjv8IWEsdR9PkZMTfyoJv6D8/taQZ6h14qHCamxt048ibGaJXqfCTt7gw5ji+gBQBCiBJkoSui8pXMMaIsg1cks02mtRubmIdW3xRg6cRQyGcFZLzpKhxeRnOjYN65FWEIKfqaI621MLVPUPihKt8ZvYu4q08nO/aoLrHT/AK3489b93frVD2uBBQqaLTAj6JqcxQJw3Z/17gY4D3nicGPFoMz6/e39r9p+qMcGyxJdJmYfSvN1uFEwLwKLGuIMkeg3YtEUEERKv82X/4lt93XSjZLAEMWM8/eQ1g1yn72zctMlkQj1AsTG4lhwsGAM=\",\"page_age\":null},{\"type\":\"web_search_result\",\"title\":\"R
+        Packages: Timeline of Updates\",\"url\":\"https://www.r4photobiology.info/pages/CRAN-activity.html\",\"encrypted_content\":\"EvEGCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDDLuzHucfKAjRwuNMRoMde6SYkw2icY3mLlSIjBB0BVeOb930gw2Az2RKHqEdt2sbDt8GTEy5e0vQ8ZcwTdmChsSrGbMMA4coNOpziYq9AUW8dzuy4NBtEO5o+VnwcCJW5yak+M+88G0k5ZBkdM/UNWdA2Ibh1d2aH/tFot4lwBBEQquK2cn4mS3beckyqvfuAmaLkUas5+jWt/C2efrSkgeIcBYnY6JWBwgJrst5wuF218oo+FYm8o8IpXWk3Ia5aM0jeufwrD5uuIWxwYx9MDD6HM6Je3aViorwqfkK2B19Zmh8Sff/ilLGfHhklQE+hlEWHtyzQZpYvBmgeL/Z5EFvJvpmykiwMa/pYHW6Dj1ZWMJXfank/MIhtAvowtuynl3gs5iQ52JEuu9s0H1hVkqnLuzXhD1BbmHfT6dl9QuB8kJUX4BOuB3J8dhGAJVZKLSvMSU41qJscF31iryXPZy3UP9ZOJRMxyRYrjR5txuI8vgT/EJfqjTQ36Rq8CCbtcsEDkZ6lMJKBIRv6cVtBkaUHEe1tn4m5g+YrQJRrxIHLiOam3YDK1zusCtz9UQAyQ/6jOsGVzfzHA7gBTLiRtbgxoQugL/9bSauMSbaiukKx7B5J87IOIUHAg7NX5S94Xu2zJBitGXMVV37FJWDCEhDYu+NfTRfjWuoTMTliFAUR9Oqx6MHcKiCHj1UeSRWPjFfj1eINKUFHIzPr1W0r11e4wJ9kt4C1QgKRK2jMOa3ahHD1U+OjDRsedXjA00etfwfqOtRJYCyb+KsS+h+flvA+e4x5gsCsHcPSIw4zft1HkskoXBhbzJgtbUlGDFVjNFGtFDp3vYc4SUfy8knMm2yuSQwB8iNoudf1T5XiyuxZs/G4pztkO+7zu8t8qLuPD+wE/8bFEUcQr2SEXxXgPPO4NmCgil+pxIWDFzEw5XdhUv1cOExFblptKk0VVitcOT4SBskkgim5TQ44B8SCldc5GSl9PVtiWQT5AOSEnfRCh0HHS/uqOLSw/euYDYpHcGu9Nf/IkwGMrQkYB5S5Gj9DCMk+PgYBq4ZCXTaMjvuHmn8nKEMG6AnaGUPD36AjSsXCYFvGeVIB5ajI5HglpW22YYAw==\",\"page_age\":\"845
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"Index of /src/contrib/Archive/ggplot2
+        - CRAN - R Project\",\"url\":\"https://cran.r-project.org/src/contrib/Archive/ggplot2/\",\"encrypted_content\":\"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\",\"page_age\":\"1647
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"ggplot2: Create Elegant
+        Data Visualisations Using the ...\",\"url\":\"https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf\",\"encrypted_content\":\"EuEFCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDBZ1KWq4pm/yX1vIshoMvJyWNnn4zkVceB2UIjB6PHhJo+o9F+bPJ5Nm+qNH5Wolmd0waUZF4MceSKJpfOIp3lKzZ+bqwsRN+/rPhx4q5ATJKcqc37NQW/qxHdyFJEDu+fGGG/UAyEtTByu8Cw8Q2UhFp7jHo/FEIdWon0AEI6wFON5AZtex5zipqiIwHEa3fre+X36+91nhCE6dhtl5CGcDqWFRM9V/lL374WpF4R8Jzy9eILsIimhP6BbMeBLhstbNQMR/OfX0S/miMx27roV5fRXRv1f1GB4SdV1V0Q6km5e6ym1BA0LBEjoka7alq/N45XsEOdnM9jzgjRnSb0X/Rz/TSKm304PS98wXgxDREa4AOYUx5IXa3pUUCBui1RtUA4RaXtjW7JdAWYXo7M2TLuLSYOvBFdOE8eiGStK/je3FYD2VknktSx2RqziNroj7KlC5fAsxmgN8jzqfS8xAeXNRo4mseGNa8mBkWHQorAwZWnBP0OhPpNBtk+BQ5g+iAy427bs9ACRiG4u38q56BlsqsximriEOlRHedY3UhY0YqpK88C7BwyGcNLkbxj1DnMjvei47z4CvE7fkoI1Kt/LP7VyxnsB0qKYqhx4F7VwY9GrEwNVs/wpHjhaYf2MmtMHCcZ21ICsqtlWzb4s1/EwbsfTyIZCQCk/Q+PZdi6M1qupUS/OM6Bh6g/85wqVbipSghZeDiiDvfAWeYSRvZN5U8nLVG15DfsX4EVe7/eyFV8v8V7kenyaBMk79M/+jEl3KWRjJLg5U3bthXLrocZrtET+gWXAAwQWq4I55JlI9kAbACRizOIdBxmkYe6z2TYA5uezKVjK0LsKb1pcr0BmvjuwNPsZLFIWrQ86txTytsCTLsBrz5GV9HLtV5RHonnKSA98gqo/eTBC1E4T7VpsYAw==\",\"page_age\":\"926
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"GitHub - hadley/ggplot1:
+        Before there was ggplot2 \xB7 GitHub\",\"url\":\"https://github.com/hadley/ggplot1\",\"encrypted_content\":\"EpYJCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDFbrTekTB/FcMhhOFhoMM/f7lkDoT1uBQ4HyIjCC2MTGx9MPreMi42Dun9ylS85rl8+UxDN38f1w9YWPAPoQnMOT1/fwMbdbi/MKdbEqmQiMWbFsyTZICh+r/JpySZPsKRcOjwyz+wjhChXV4MbVhKgGmbu9e8WZ6InJ0ZT89U9T+0yWbPs+wXJTktpbJwCAClLRdRo+z36/aekx/gphgcK/TrTg5o1Qu+FoOdeUQ7xKp28FxsX23on60DhTG6dwCXKlnDM6TmrFOhKL2b85USzVm6ol7byf2XnJocLDIJO5dciKnQi20CsL74+NdDBjw578wyaFW2CGEUbzTHDkZGOcwgun5wCwuhnJl2sSRtTtsHGAYtiPxgixraGp1vPtvOWhbiSopge8V1S8laUpA8YwACGO1veYTWpL1I9mF8CIQstNF9AgrB/HymN3PDeMgUAU4keSYhkZQ4kcw5xI34v3YZ9SBoHGYQlvq9sw5KLP4lUSFNd+vKUzbVzZ5Eyi2lYbUP8+bFuigwgLLsic1elKYGbM+AKwZq060MgJNe3uPS8rZjqjxREd4gUuJ6Ux77vlCqQV/lEbGXjJ2qsn24PX+NIREHhu76zgFGo5GsgSjH6F5FE0nKON3/wqZpEV4G/38gs9PW5fmps+G+1s+TFLseA0qWeZelWhrQwyj7LhaZThO0pRh87VO8GFt4QozqTCO+Y5YlLNh75BGflyVVzVsSDxD3CArprcUefoI3v12feZzIcX3Cuv6rC/qmri2gPYZeLv3PB7meNrtfD26uGF9B7Yi/BvGtAXsL9PQCmNiJtuaK0E2slI6B2WQtp0GpW+vkKL4Rxi3oiZcfJN/aBuYkZzoBVg1yn6OBCS8sE3tX1VGyfjlpWCvtYE9Eynbq/9BO0UWO3LIebx0VKRikaQytwXQ1MeiyhFJFtCKQ1rlpwnTSo3guV7fg2hn2Zsu0Wq9wl6ULVfjNpx2LQX78+O7wF3bOkFOLnSq7ZqiUs9vFBnaU3y6sgUhrsxwTtbAVAMtlsCCc6n/SEdpjagBL1yJSJ+4ArIpK3GO18IKQzMkbSsyfc2kfU1U4By6f+2Hhm80WFTIPcWBur3NZCcyDHNUpJqvjVPlXEywt4WD4MkB321nGP/0N6FEWWE28r7A4upH6LvDLHxwBN9cfiTF7m552NQ9bApbwoZuVvCwz6UAmFZQLp+aeC3oAVtn06ig3isv5SSMOAaTjuiohCsYmR6b6Qc0k/VrpU8e8+xOMsh7WiFpvCTxyNv6ffUgmkpWYsNl9UjzMNrd3zpoaRWEgB4rjjPxu2jk3wHALt0DqQDyXswZqMjStnk+EYapH7xkswc6Pqs4bOWxF8uWCZwVFbg3SLkxIdVXMVcEE2c53HAyliHOWrqudeOb6WUNsUZqktr5ZLX/jK4wJjwmhFlD2Xv9s4H8m1GaCatOLTm4/Sx91mLCLuEF+nGzKBfWpluEGXZ81kPudksFH22PQAZ+nbV3sahxirTVRgD\",\"page_age\":\"3802
+        days ago\"},{\"type\":\"web_search_result\",\"title\":\"GitHub - tidyverse/ggplot2:
+        An implementation of the Grammar of Graphics in R \xB7 GitHub\",\"url\":\"https://github.com/tidyverse/ggplot2\",\"encrypted_content\":\"EoEGCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDEnOsB/JzhN7kNj1fhoMkOcGc1RULsOd+DdDIjDISPEO/YQzDWkFvBDWwuldeY5ZmLlk1b4uU2p77Aa9AQ/ffTR0p2hqI0az3IM/K0IqhAV2elFqmodB5LUuv5+Sy1M1C/kn3SjL5/xSWUxjo8OOh4M3gJwcbp0YJ7Lc0II2oz5/rDyqg4vcD2LoY0rr+jVrxor87PWJ4FBBh1cd9u5xLxSfjzgBt/tMDh1yV5/LyiUMnym4c8+gDGP29J5zoHvm58pXJMbmBg17YCP4bUPqFLdofYNYv25aA473MgcTa/HvuTGdyEF1dErgtsQ9mgKWC4xcuS0odX14ccedghSmhR3EhiwOGtb0QMbp+LJZBSVDj0KHVn3KJ4sCVoCnRit7zHO4IIZ3MhOZMF7jh4oZcTyAs2uqluLSDpZUdlMRaFdLJYaW0kH9y0xIrALK9e0C0lcL1oFMd+4I2uxkTcbkiujfBu0nF6fygd9wSBXlM2akn1gQvOaCtkFlq276Oq8lKgcLaHRpXWfK9JXBk7/vxQXafCkturwOGTXZQ/tJzB4nkFrHB469KkaWQKVEHFGVw0mGvNY4JbCy2GYcb/h+iWGKxzOL1+LdvFUWvBfW4Nv1GFUGkS/GRqm0Ue1XYOhEFEOX+TcElY9HpKOl5oNi1BAj+0GOKbGzfgL9EkkFZSI9+ygLAsfi8KKEwZ7DL9hHTV79scyaB0RIxqxWReLdH7oUq7z/Upe7C3J8ZgT+YNYBrdWYJnWb/C6f5Q4KK1uEg62F7G9P03qW7gfzS3G/w5Fz51HpXtfl6KNGAXa0PJtejRY+JF3QOB2j8OqLLMdC6D4jVVtEqzPemAbeF4tu3/TRUDi6vqO6PfZimwEXUQViGpvYoVuwdkh2rEQj6s9FzZfNy0pf4Xs3tL2IKO0JKRVG05WD2c//KL9bXxMIAzPuj9++b27dZ3Q+p6+Jh4ro+pgo9RgD\",\"page_age\":\"1868
+        days ago\"}],\"caller\":{\"type\":\"direct\"}}   }\n\nevent: content_block_stop\ndata:
+        {\"type\":\"content_block_stop\",\"index\":2              }\n\nevent: content_block_start\ndata:
+        {\"type\":\"content_block_start\",\"index\":3,\"content_block\":{\"type\":\"thinking\",\"thinking\":\"\",\"signature\":\"\"}
+        }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":3,\"delta\":{\"type\":\"thinking_delta\",\"thinking\":\"\"}}\n\nevent:
+        content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":3,\"delta\":{\"type\":\"signature_delta\",\"signature\":\"CAQSwQcKEAgTGAI4AUIIdGhpbmtpbmcSDHYODfEdIEmnmi5GrBoMref0Cb/VM0qO8oneIjAzfalo5GPhnUL4G3EA1UCLuB1u8/AK7Ann6eKKSgfKdiiDnqkqbQjOhYUV0Cwdo3sq3gZe5/u+UmdB9mX3UCRXhALZs44Fgz8/P2rsHJNRNZdAau/exmuNowvfTWlvb+MZYTJ6fg3HwrszUWj+LTmasX8oGoLUZ5X2vhqVGTy9mbmq9xgG/vMz97lIoqk9+RLGP7Eyc0XMCT3O8KHYujTE+Uycx4qtDUwX1/J1iU49g1pyXn3pEbKrQ4PHEE7db+D07qWo8c00Sfdxg7P+nRdoddDkVlhwMf00D0XU5hkiKKMajFGJzwxjBYRnCZbfUxvIyEf5t0H9u6T+UXgj6ucgyxdV1f8Uloc+LAI59EmVVeiWN3kKjYssfSCja/UB4uKwQ1fIZkjWdfb1RjYT/VqDBsm66ymPE6/BoQfYUMgvyXSBmBh6wiiFPoviK6CDGulv+PSPA/Vv2kF7GFyv2PzChT/hItPZcNeTTTSV7itvTOMQxdwI5sg7kEofw6+pFuXL65r0aBsScUTm+OcXzl4AZKiZMd7fNlERjyGBzPP24AesVRcbb5XbmvZPuk2GrjQoFkitZUBt+A0vXh3yIC9y0UlP4jvMEtgMDiu9FKv7aGd/RrD5he9XEG5oQK05L7rSWqmsxP7ok9Cm4wydkmxEYxjyX6cJRTa4sxGePMizHCyC8g6lrEMKV0V146A09kQTK0TMe6484oAPNWcTrQwQO4gZKhzwsyZy2lDQvi+bjb5Vcg4BqFa+UNEU0xe5MeR0P0u+3asaXd8K+4W3Djyo7eKyw57CsDe5SJrKEJGDPcwXGxc3asKTpY58M7Tl1+kmmd+Rdr1zuDDaTthEyeG/Ssrng2lp6yUjQc4DyDYYaFfxo/pyCplu/8QMzFrJwIQzVckQWdNIGxJ81c7wr37nFR+bxTpHx7oW2FhRWDjyFBcheDprDvQxNvWq5qy7AsYKuPn5IeAlU1y+aAifzuzMvdSkjXL5ZUWya16uOVTnb58g/exCMn7oI0pF4zrAGQ3jt0emoM0Vmy60BGw+D0EeDZc1Zv8hOBlN72cZWb08p1drlDh+hTaBLxwJFHf2/Vfm5LamugSakwlRvXXMXXgozn4SuVyBr4pDlfiUvt1g6MUL5LlIpgA+hhzwoAbvjPctZgifk79Pj0Rxv4OU4dy29QyHdfK+x4VAClYFjfKJ+Yv7ukkqEGV4UTvVD4qKAT7uGAE=\"}
+        \       }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":3
+        \       }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":4,\"content_block\":{\"type\":\"text\",\"text\":\"\"}
+        \       }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":4,\"delta\":{\"type\":\"text_delta\",\"text\":\"ggplot2
+        1.0\"}}\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":4,\"delta\":{\"type\":\"text_delta\",\"text\":\".0
+        was released to CR\"}               }\n\nevent: content_block_delta\ndata:
+        {\"type\":\"content_block_delta\",\"index\":4,\"delta\":{\"type\":\"text_delta\",\"text\":\"AN
+        on **2014-05\"}}\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":4,\"delta\":{\"type\":\"text_delta\",\"text\":\"-21**.
+        The CRA\"}     }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":4,\"delta\":{\"type\":\"text_delta\",\"text\":\"N
+        archive index lists \"}             }\n\nevent: content_block_stop\ndata:
+        {\"type\":\"content_block_stop\",\"index\":4        }\n\nevent: content_block_start\ndata:
+        {\"type\":\"content_block_start\",\"index\":5,\"content_block\":{\"citations\":[],\"type\":\"text\",\"text\":\"\"}
+        \          }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":5,\"delta\":{\"type\":\"citations_delta\",\"citation\":{\"type\":\"web_search_result_location\",\"cited_text\":\"#
+        Index of /src/contrib/Archive/ggplot2\\n| \\\\[ICO] | Name | Last modified
+        | Size | Description |\\n| --- | --- | --- | --- | --- |\\n| \\\\[ ] | ggplot2\\\\_0.5.1...\",\"url\":\"https://cran.r-project.org/src/contrib/Archive/ggplot2/\",\"title\":\"Index
+        of /src/contrib/Archive/ggplot2 - CRAN - R Project\",\"encrypted_index\":\"Eo8BCioIFRgCIiQ1MzY3Y2M0OC03OTYwLTQ5NmUtOTkyYS1kYmExZTRkMDViNDISDFvwEIwhALxxMr8oKxoMVnFocSZKqZQaneCGIjBCg2y6pvDI+hxMmv6kXQzXLXHpv1RHN0bznUt2H1hlEQE77+i1i30RgunhlYlLqykqEz6QqTkawAFiMQUKi8nsRAuiAzsYBA==\"}}
+        \  }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":5,\"delta\":{\"type\":\"text_delta\",\"text\":\"ggplot2\"}
+        \     }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":5,\"delta\":{\"type\":\"text_delta\",\"text\":\"_1.0.0.t\"}
+        \     }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":5,\"delta\":{\"type\":\"text_delta\",\"text\":\"ar.gz\"}
+        \         }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":5
+        \       }\n\nevent: content_block_start\ndata: {\"type\":\"content_block_start\",\"index\":6,\"content_block\":{\"type\":\"text\",\"text\":\"\"}
+        \              }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        with a\"}           }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        last-modified timestamp\"}      }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        of 2014-05-21\"}      }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        15:36, and the r\"}      }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"pkg.net
+        list\"}      }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"ing
+        g\"}           }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"ives
+        the same date for version\"}            }\n\nevent: content_block_delta\ndata:
+        {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        1.0.0. The\"}         }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        arch\"}              }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"ive
+        tim\"}}\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"estamp
+        is the up\"} }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"load/\"}
+        \  }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"mod\"}
+        \       }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"ification
+        time\"}       }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\",
+        so it is the closest available\"}           }\n\nevent: content_block_delta\ndata:
+        {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        record of\"}        }\n\nevent: content_block_delta\ndata: {\"type\":\"content_block_delta\",\"index\":6,\"delta\":{\"type\":\"text_delta\",\"text\":\"
+        the release date.\"}       }\n\nevent: content_block_stop\ndata: {\"type\":\"content_block_stop\",\"index\":6
+        \      }\n\nevent: message_delta\ndata: {\"type\":\"message_delta\",\"delta\":{\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"stop_details\":null,\"container\":null},\"usage\":{\"input_tokens\":6,\"cache_creation_input_tokens\":9803,\"cache_read_input_tokens\":2857,\"output_tokens\":490,\"output_tokens_details\":{\"thinking_tokens\":272},\"server_tool_use\":{\"web_search_requests\":1,\"web_fetch_requests\":0}}
+        \     }\n\nevent: message_stop\ndata: {\"type\":\"message_stop\"  }\n\n"
+    headers:
+      anthropic-ratelimit-input-tokens-limit:
+      - '10000000'
+      anthropic-ratelimit-input-tokens-remaining:
+      - '9998000'
+      anthropic-ratelimit-input-tokens-reset:
+      - '2026-11-05T00:00:51Z'
+      anthropic-ratelimit-output-tokens-limit:
+      - '2000000'
+      anthropic-ratelimit-output-tokens-remaining:
+      - '2000000'
+      anthropic-ratelimit-output-tokens-reset:
+      - '2026-11-05T00:00:51Z'
+      anthropic-ratelimit-requests-limit:
+      - '45000'
+      anthropic-ratelimit-requests-remaining:
+      - '44999'
+      anthropic-ratelimit-requests-reset:
+      - '2026-11-05T00:00:51Z'
+      anthropic-ratelimit-tokens-limit:
+      - '12000000'
+      anthropic-ratelimit-tokens-remaining:
+      - '11998000'
+      anthropic-ratelimit-tokens-reset:
+      - '2026-11-05T00:00:51Z'
+      anthropic-workspace-id:
+      - wrkspc_01D4K8epTDxMNmDoR6V5auh4
+      cache-control:
+      - no-cache
+      cf-cache-status:
+      - DYNAMIC
+      connection:
+      - keep-alive
+      content-length:
+      - '27416'
+      content-security-policy:
+      - default-src 'none'; frame-ancestors 'none'
+      content-type:
+      - text/event-stream; charset=utf-8
+      date:
+      - Thu, 05 Nov 2026 00:00:51 GMT
+      server:
+      - cloudflare
+      server-timing:
+      - x-originResponse;dur=69
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      traceresponse:
+      - 00-f08987e55d6654459f0772960074fce8-0d25791c2e4fcb66-01
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-robots-tag:
+      - none
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,25 @@
+__pycache__
+
+.ipynb_checkpoints/
+Untitled*.ipynb
+
+.venv
+uv.lock
+
+sandbox/
+logs/
+
+# Local scratch / AI-generated planning docs
+docs/plans/
+docs/superpowers/
+
+/.luarc.json
+
+# worktrees
+.worktrees/
+
+# setuptools_scm
+chatlas/_version.py
+
+# superpowers visual companion working dir
+.superpowers/

@@ -1,0 +1,486 @@
+interactions:
+- request:
+    body: '{"max_tokens": 4096, "messages": [{"role": "user", "content": [{"text":
+      "\n# Apples are tasty\n\nBy Hadley Wickham\nApples are delicious and tasty and
+      I like to eat them.\nExcept for red delicious, that is. They are NOT delicious.\n",
+      "type": "text", "cache_control": {"type": "ephemeral", "ttl": "5m"}}]}], "model":
+      "claude-haiku-5-5", "output_config": {"format": {"type": "json_schema", "schema":
+      {"type": "object", "description": "Summary of the article", "title": "ArticleSummary",
+      "properties": {"title": {"type": "string", "title": "Title"}, "author": {"type":
+      "string", "title": "Author"}}, "additionalProperties": false, "required": ["title",
+      "author"]}}}, "stream": false, "system": [{"type": "text", "text": "[empty string]",
+      "cache_control": {"type": "ephemeral", "ttl": "5m"}}], "tools": []}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      anthropic-version:
+      - '2026-10-21'
+      connection:
+      - keep-alive
+      content-length:
+      - '746'
+      content-type:
+      - application/json
+      host:
+      - api.anthropic.com
+      x-stainless-async:
+      - 'false'
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-timeout:
+      - '600'
+    method: POST
+    uri: https://api.anthropic.com/v1/messages
+  response:
+    body:
+      string: '{"model":"claude-haiku-5-5","id":"msg_011Cgiok5qmBrhMuqmKdkuyv","type":"message","role":"assistant","content":[{"type":"text","text":"{\"title\":\"Apples
+        are tasty\",\"author\":\"Hadley Wickham\"}"}],"container":null,"stop_reason":"end_turn","stop_sequence":null,"stop_details":null,"usage":{"input_tokens":326,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":0,"ephemeral_1h_input_tokens":0},"output_tokens":28,"output_tokens_details":{"thinking_tokens":0},"service_tier":"standard","inference_geo":"global","speed":"standard"},"diagnostics":null}'
+    headers:
+      anthropic-ratelimit-input-tokens-limit:
+      - '10000000'
+      anthropic-ratelimit-input-tokens-remaining:
+      - '10000000'
+      anthropic-ratelimit-input-tokens-reset:
+      - '2026-11-05T00:07:13Z'
+      anthropic-ratelimit-output-tokens-limit:
+      - '2000000'
+      anthropic-ratelimit-output-tokens-remaining:
+      - '2000000'
+      anthropic-ratelimit-output-tokens-reset:
+      - '2026-11-05T00:07:14Z'
+      anthropic-ratelimit-requests-limit:
+      - '45000'
+      anthropic-ratelimit-requests-remaining:
+      - '44999'
+      anthropic-ratelimit-requests-reset:
+      - '2026-11-05T00:07:12Z'
+      anthropic-ratelimit-tokens-limit:
+      - '12000000'
+      anthropic-ratelimit-tokens-remaining:
+      - '12000000'
+      anthropic-ratelimit-tokens-reset:
+      - '2026-11-05T00:07:13Z'
+      anthropic-workspace-id:
+      - wrkspc_01D4K8epTDxMNmDoR6V5auh4
+      cf-cache-status:
+      - DYNAMIC
+      connection:
+      - keep-alive
+      content-length:
+      - '605'
+      content-security-policy:
+      - default-src 'none'; frame-ancestors 'none'
+      content-type:
+      - application/json
+      date:
+      - Thu, 05 Nov 2026 00:07:14 GMT
+      server:
+      - cloudflare
+      server-timing:
+      - x-originResponse;dur=1185
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      traceresponse:
+      - 00-f7bab3e2e3d734a44f458cf964776cad-e66d411d723dd199-01
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-robots-tag:
+      - none
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"max_tokens": 4096, "messages": [{"role": "user", "content": [{"text":
+      "\n# Apples are tasty\n\nBy Hadley Wickham\nApples are delicious and tasty and
+      I like to eat them.\nExcept for red delicious, that is. They are NOT delicious.\n",
+      "type": "text"}]}, {"role": "assistant", "content": [{"text": "{\"title\":\"Apples
+      are tasty\",\"author\":\"Hadley Wickham\"}", "type": "text"}]}, {"role": "user",
+      "content": [{"text": "\n# Apples are tasty\n\nBy Hadley Wickham\nApples are
+      delicious and tasty and I like to eat them.\nExcept for red delicious, that
+      is. They are NOT delicious.\n", "type": "text", "cache_control": {"type": "ephemeral",
+      "ttl": "5m"}}]}], "model": "claude-haiku-5-5", "output_config": {"format": {"type":
+      "json_schema", "schema": {"type": "object", "description": "Summary of the article",
+      "title": "ArticleSummary", "properties": {"title": {"type": "string", "title":
+      "Title"}, "author": {"type": "string", "title": "Author"}}, "additionalProperties":
+      false, "required": ["title", "author"]}}}, "stream": false, "system": [{"type":
+      "text", "text": "[empty string]", "cache_control": {"type": "ephemeral", "ttl":
+      "5m"}}], "tools": []}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      anthropic-version:
+      - '2026-10-21'
+      connection:
+      - keep-alive
+      content-length:
+      - '1080'
+      content-type:
+      - application/json
+      host:
+      - api.anthropic.com
+      x-stainless-async:
+      - 'false'
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-timeout:
+      - '600'
+    method: POST
+    uri: https://api.anthropic.com/v1/messages
+  response:
+    body:
+      string: '{"model":"claude-haiku-5-5","id":"msg_011CgiokBETFhSDJL9BtUxiE","type":"message","role":"assistant","content":[{"type":"text","text":"{\"title\":\"Apples
+        are tasty\",\"author\":\"Hadley Wickham\"}"}],"container":null,"stop_reason":"end_turn","stop_sequence":null,"stop_details":null,"usage":{"input_tokens":416,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":0,"ephemeral_1h_input_tokens":0},"output_tokens":28,"output_tokens_details":{"thinking_tokens":0},"service_tier":"standard","inference_geo":"global","speed":"standard"},"diagnostics":null}'
+    headers:
+      anthropic-ratelimit-input-tokens-limit:
+      - '10000000'
+      anthropic-ratelimit-input-tokens-remaining:
+      - '10000000'
+      anthropic-ratelimit-input-tokens-reset:
+      - '2026-11-05T00:07:14Z'
+      anthropic-ratelimit-output-tokens-limit:
+      - '2000000'
+      anthropic-ratelimit-output-tokens-remaining:
+      - '2000000'
+      anthropic-ratelimit-output-tokens-reset:
+      - '2026-11-05T00:07:14Z'
+      anthropic-ratelimit-requests-limit:
+      - '45000'
+      anthropic-ratelimit-requests-remaining:
+      - '44999'
+      anthropic-ratelimit-requests-reset:
+      - '2026-11-05T00:07:14Z'
+      anthropic-ratelimit-tokens-limit:
+      - '12000000'
+      anthropic-ratelimit-tokens-remaining:
+      - '12000000'
+      anthropic-ratelimit-tokens-reset:
+      - '2026-11-05T00:07:14Z'
+      anthropic-workspace-id:
+      - wrkspc_01D4K8epTDxMNmDoR6V5auh4
+      cf-cache-status:
+      - DYNAMIC
+      connection:
+      - keep-alive
+      content-length:
+      - '605'
+      content-security-policy:
+      - default-src 'none'; frame-ancestors 'none'
+      content-type:
+      - application/json
+      date:
+      - Thu, 05 Nov 2026 00:07:14 GMT
+      server:
+      - cloudflare
+      server-timing:
+      - x-originResponse;dur=634
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      traceresponse:
+      - 00-a6fea5fcf032002beb858e70908f4562-8b17fcd118e61f13-01
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-robots-tag:
+      - none
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"max_tokens": 4096, "messages": [{"role": "user", "content": [{"text":
+      "\n# Apples are tasty\n\nBy Hadley Wickham\nApples are delicious and tasty and
+      I like to eat them.\nExcept for red delicious, that is. They are NOT delicious.\n",
+      "type": "text"}]}, {"role": "assistant", "content": [{"text": "{\"title\":\"Apples
+      are tasty\",\"author\":\"Hadley Wickham\"}", "type": "text"}]}, {"role": "user",
+      "content": [{"text": "\n# Apples are tasty\n\nBy Hadley Wickham\nApples are
+      delicious and tasty and I like to eat them.\nExcept for red delicious, that
+      is. They are NOT delicious.\n", "type": "text"}]}, {"role": "assistant", "content":
+      [{"text": "{\"title\":\"Apples are tasty\",\"author\":\"Hadley Wickham\"}",
+      "type": "text"}]}, {"role": "user", "content": [{"text": "Generate the name
+      and age of a random person.", "type": "text", "cache_control": {"type": "ephemeral",
+      "ttl": "5m"}}]}], "model": "claude-haiku-5-5", "output_config": {"format": {"type":
+      "json_schema", "schema": {"type": "object", "title": "Person", "properties":
+      {"name": {"type": "string", "title": "Name"}, "age": {"type": "integer", "title":
+      "Age"}}, "additionalProperties": false, "required": ["name", "age"]}}}, "stream":
+      false, "system": [{"type": "text", "text": "[empty string]", "cache_control":
+      {"type": "ephemeral", "ttl": "5m"}}], "tools": []}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      anthropic-version:
+      - '2026-10-21'
+      connection:
+      - keep-alive
+      content-length:
+      - '1242'
+      content-type:
+      - application/json
+      host:
+      - api.anthropic.com
+      x-stainless-async:
+      - 'false'
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-timeout:
+      - '600'
+    method: POST
+    uri: https://api.anthropic.com/v1/messages
+  response:
+    body:
+      string: '{"model":"claude-haiku-5-5","id":"msg_011CgiokEJkPqjHWtqaq4Nij","type":"message","role":"assistant","content":[{"type":"text","text":"{\"name\":\"Maria
+        Lopez\",\"age\":34}"}],"container":null,"stop_reason":"end_turn","stop_sequence":null,"stop_details":null,"usage":{"input_tokens":441,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":0,"ephemeral_1h_input_tokens":0},"output_tokens":19,"output_tokens_details":{"thinking_tokens":0},"service_tier":"standard","inference_geo":"global","speed":"standard"},"diagnostics":null}'
+    headers:
+      anthropic-ratelimit-input-tokens-limit:
+      - '10000000'
+      anthropic-ratelimit-input-tokens-remaining:
+      - '10000000'
+      anthropic-ratelimit-input-tokens-reset:
+      - '2026-11-05T00:07:15Z'
+      anthropic-ratelimit-output-tokens-limit:
+      - '2000000'
+      anthropic-ratelimit-output-tokens-remaining:
+      - '2000000'
+      anthropic-ratelimit-output-tokens-reset:
+      - '2026-11-05T00:07:15Z'
+      anthropic-ratelimit-requests-limit:
+      - '45000'
+      anthropic-ratelimit-requests-remaining:
+      - '44999'
+      anthropic-ratelimit-requests-reset:
+      - '2026-11-05T00:07:14Z'
+      anthropic-ratelimit-tokens-limit:
+      - '12000000'
+      anthropic-ratelimit-tokens-remaining:
+      - '12000000'
+      anthropic-ratelimit-tokens-reset:
+      - '2026-11-05T00:07:15Z'
+      anthropic-workspace-id:
+      - wrkspc_01D4K8epTDxMNmDoR6V5auh4
+      cf-cache-status:
+      - DYNAMIC
+      connection:
+      - keep-alive
+      content-length:
+      - '580'
+      content-security-policy:
+      - default-src 'none'; frame-ancestors 'none'
+      content-type:
+      - application/json
+      date:
+      - Thu, 05 Nov 2026 00:07:15 GMT
+      server:
+      - cloudflare
+      server-timing:
+      - x-originResponse;dur=608
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      traceresponse:
+      - 00-e3246f04985d7dc75a9caf313db89736-714f0d7bc3ed68e9-01
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-robots-tag:
+      - none
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"max_tokens": 4096, "messages": [{"role": "user", "content": [{"text":
+      "\n# Apples are tasty\n\nBy Hadley Wickham\nApples are delicious and tasty and
+      I like to eat them.\nExcept for red delicious, that is. They are NOT delicious.\n",
+      "type": "text"}]}, {"role": "assistant", "content": [{"text": "{\"title\":\"Apples
+      are tasty\",\"author\":\"Hadley Wickham\"}", "type": "text"}]}, {"role": "user",
+      "content": [{"text": "\n# Apples are tasty\n\nBy Hadley Wickham\nApples are
+      delicious and tasty and I like to eat them.\nExcept for red delicious, that
+      is. They are NOT delicious.\n", "type": "text"}]}, {"role": "assistant", "content":
+      [{"text": "{\"title\":\"Apples are tasty\",\"author\":\"Hadley Wickham\"}",
+      "type": "text"}]}, {"role": "user", "content": [{"text": "Generate the name
+      and age of a random person.", "type": "text"}]}, {"role": "assistant", "content":
+      [{"text": "{\"name\":\"Maria Lopez\",\"age\":34}", "type": "text"}]}, {"role":
+      "user", "content": [{"text": "What is the name of the person?", "type": "text",
+      "cache_control": {"type": "ephemeral", "ttl": "5m"}}]}], "model": "claude-haiku-5-5",
+      "stream": true, "system": [{"type": "text", "text": "[empty string]", "cache_control":
+      {"type": "ephemeral", "ttl": "5m"}}], "tools": []}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      anthropic-version:
+      - '2026-10-21'
+      connection:
+      - keep-alive
+      content-length:
+      - '1179'
+      content-type:
+      - application/json
+      host:
+      - api.anthropic.com
+      x-stainless-async:
+      - 'false'
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-timeout:
+      - NOT_GIVEN
+    method: POST
+    uri: https://api.anthropic.com/v1/messages
+  response:
+    body:
+      string: 'event: message_start
+
+        data: {"type":"message_start","message":{"model":"claude-haiku-5-5","id":"msg_011CgiokHFrFcDDuJdTdDtBu","type":"message","role":"assistant","content":[],"container":null,"stop_reason":null,"stop_sequence":null,"stop_details":null,"usage":{"input_tokens":235,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":0,"ephemeral_1h_input_tokens":0},"output_tokens":8,"service_tier":"standard","inference_geo":"global","speed":"standard"},"diagnostics":null}     }
+
+
+        event: content_block_start
+
+        data: {"type":"content_block_start","index":0,"content_block":{"type":"text","text":""}       }
+
+
+        event: ping
+
+        data: {"type": "ping"}
+
+
+        event: content_block_delta
+
+        data: {"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"The
+        name of the person I generated"}          }
+
+
+        event: content_block_delta
+
+        data: {"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"
+        is"}     }
+
+
+        event: content_block_delta
+
+        data: {"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"
+        Maria Lopez."}               }
+
+
+        event: content_block_delta
+
+        data: {"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"
+        This"}}
+
+
+        event: content_block_delta
+
+        data: {"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"
+        was a rand"} }
+
+
+        event: content_block_delta
+
+        data: {"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"omly
+        inv"} }
+
+
+        event: content_block_delta
+
+        data: {"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"ented
+        name, not a"}}
+
+
+        event: content_block_delta
+
+        data: {"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"
+        real person''s"}             }
+
+
+        event: content_block_delta
+
+        data: {"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"
+        name"}        }
+
+
+        event: content_block_delta
+
+        data: {"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"."}             }
+
+
+        event: content_block_stop
+
+        data: {"type":"content_block_stop","index":0   }
+
+
+        event: message_delta
+
+        data: {"type":"message_delta","delta":{"stop_reason":"end_turn","stop_sequence":null,"stop_details":null,"container":null},"usage":{"input_tokens":235,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":36,"output_tokens_details":{"thinking_tokens":0}}         }
+
+
+        event: message_stop
+
+        data: {"type":"message_stop"          }
+
+
+        '
+    headers:
+      anthropic-ratelimit-input-tokens-limit:
+      - '10000000'
+      anthropic-ratelimit-input-tokens-remaining:
+      - '10000000'
+      anthropic-ratelimit-input-tokens-reset:
+      - '2026-11-05T00:07:15Z'
+      anthropic-ratelimit-output-tokens-limit:
+      - '2000000'
+      anthropic-ratelimit-output-tokens-remaining:
+      - '2000000'
+      anthropic-ratelimit-output-tokens-reset:
+      - '2026-11-05T00:07:15Z'
+      anthropic-ratelimit-requests-limit:
+      - '45000'
+      anthropic-ratelimit-requests-remaining:
+      - '44999'
+      anthropic-ratelimit-requests-reset:
+      - '2026-11-05T00:07:15Z'
+      anthropic-ratelimit-tokens-limit:
+      - '12000000'
+      anthropic-ratelimit-tokens-remaining:
+      - '12000000'
+      anthropic-ratelimit-tokens-reset:
+      - '2026-11-05T00:07:15Z'
+      anthropic-workspace-id:
+      - wrkspc_01D4K8epTDxMNmDoR6V5auh4
+      cache-control:
+      - no-cache
+      cf-cache-status:
+      - DYNAMIC
+      connection:
+      - keep-alive
+      content-length:
+      - '2467'
+      content-security-policy:
+      - default-src 'none'; frame-ancestors 'none'
+      content-type:
+      - text/event-stream; charset=utf-8
+      date:
+      - Thu, 05 Nov 2026 00:07:15 GMT
+      server:
+      - cloudflare
+      server-timing:
+      - x-originResponse;dur=49
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      traceresponse:
+      - 00-a81bcaa01c5ccd9751bf2e2f96b1efba-97ecc816ffe8abf8-01
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-robots-tag:
+      - none
+    status:
+      code: 200
+      message: OK
+version: 1
